@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.qr-container {
+    max-width: 100%; /* Increased width for better spacing */
+    margin: auto;
+}
+
+.qr-code {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.illustration img {
+    max-width: 70%; /* Slightly smaller for balance */
+}
+
+.row.qr-container {
+    gap: 60px; /* Added more spacing */
+}
+
+ @media (max-width: 768px) {
+            .illustration {
+                display: none; /* Hide image on mobile */
+            }
+            .otp-container {
+                flex-direction: column;
+            }
+        }

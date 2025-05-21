@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mohd-aamir-indi/Downloads/BDR/BDR/BDR/BDR.csproj": {}
+  },
+  "projects": {
+    "/home/mohd-aamir-indi/Downloads/BDR/BDR/BDR/BDR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mohd-aamir-indi/Downloads/BDR/BDR/BDR/BDR.csproj",
+        "projectName": "BDR",
+        "projectPath": "/home/mohd-aamir-indi/Downloads/BDR/BDR/BDR/BDR.csproj",
+        "packagesPath": "/home/mohd-aamir-indi/.nuget/packages/",
+        "outputPath": "/home/mohd-aamir-indi/Downloads/BDR/BDR/BDR/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mohd-aamir-indi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.10.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

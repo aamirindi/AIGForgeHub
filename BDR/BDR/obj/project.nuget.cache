@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "VUZ/fQKzcPQ=",
+  "success": true,
+  "projectFilePath": "/home/mohd-aamir-indi/Downloads/BDR/BDR/BDR/BDR.csproj",
+  "expectedPackageFiles": [
+    "/home/mohd-aamir-indi/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/home/mohd-aamir-indi/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/home/mohd-aamir-indi/.nuget/packages/microsoft.identitymodel.abstractions/8.10.0/microsoft.identitymodel.abstractions.8.10.0.nupkg.sha512",
+    "/home/mohd-aamir-indi/.nuget/packages/microsoft.identitymodel.logging/8.10.0/microsoft.identitymodel.logging.8.10.0.nupkg.sha512",
+    "/home/mohd-aamir-indi/.nuget/packages/microsoft.identitymodel.tokens/8.10.0/microsoft.identitymodel.tokens.8.10.0.nupkg.sha512",
+    "/home/mohd-aamir-indi/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

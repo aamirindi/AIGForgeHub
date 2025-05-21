@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "RKpVx3mdMrQ98PARUn3YCigl5/IirOUl114dyGyS2iY=",
+  "Source": "BDRApi",
+  "BasePath": "_content/BDRApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

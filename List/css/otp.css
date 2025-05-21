@@ -1,0 +1,29 @@
+.otp-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .otp-box input {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+            border-radius: 12px; /* Curved corners */
+            border: 2px solid #007bff;
+        }
+        .warning {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .illustration {
+                display: none; /* Hide image on mobile */
+            }
+            .otp-container {
+                flex-direction: column;
+            }
+        }

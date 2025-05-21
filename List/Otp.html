@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp</title>
+    <link rel="stylesheet" href="css/otp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row otp-container">
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <h2>Enter OTP</h2>
+                <div class="d-flex otp-box">
+                    <input type="text" maxlength="1" oninput="validateInput(this)" onkeydown="handleBackspace(event, this)" class="otp-input">
+                    <input type="text" maxlength="1" oninput="validateInput(this)" onkeydown="handleBackspace(event, this)" class="otp-input">
+                    <input type="text" maxlength="1" oninput="validateInput(this)" onkeydown="handleBackspace(event, this)" class="otp-input">
+                    <input type="text" maxlength="1" oninput="validateInput(this)" onkeydown="handleBackspace(event, this)" class="otp-input">
+                    <input type="text" maxlength="1" oninput="validateInput(this)" onkeydown="handleBackspace(event, this)" class="otp-input">
+                    <input type="text" maxlength="1" oninput="validateInput(this)" onkeydown="handleBackspace(event, this)" class="otp-input">
+                </div>
+                <p class="warning" id="warning">Only numbers are allowed!</p>
+                <button class="btn btn-primary mt-3" onclick="clearOTP">Verify</button>
+            </div>
+            <div class="col-md-6 illustration">
+                <img src="img/img2.svg" alt="Illustration" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/otp.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/qr.css" asp-append-version="true" />
+</head>
+
+<body>
+
+    <partial name="Notification"></partial>
+    <div class="container">
+        <div class="row qr-container gap-5">
+            <div class="col-md-5 d-flex flex-column justify-content-center align-items-center">
+                <h2>Scan QR Code</h2>
+                <img src="~/img/qr-code.png" alt="QR Code" class="qr-code img-fluid">
+            </div>
+            <div class="col-md-5 illustration d-flex justify-content-center align-items-center">
+                <img src="~/img/img3.svg" alt="Illustration" class="img-fluid illustration">
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

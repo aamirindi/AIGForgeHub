@@ -1,0 +1,52 @@
+.container {
+    width: 60%; /* Reduce width for a more compact layout */
+}
+
+.row {
+    width: 100%;
+    padding: 20px; /* Smaller padding */
+}
+
+.logo {
+    width: 100px; /* Make logo smaller */
+    margin-bottom: 5px;
+}
+
+.illustration {
+    max-width: 80%;
+    height: auto;
+}
+
+.form-container {
+    text-align: right; /* Align everything to the right */
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.mb-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .illustration {
+        display: none; /* Hide illustration on mobile */
+    }
+
+    .form-control {
+        width: 100%; /* Full width input on mobile */
+    }
+}
