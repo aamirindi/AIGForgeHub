@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BDRApi.DTOs;
+using BDRApi.Models;
 using BDRApi.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -96,6 +97,15 @@ namespace BDRApi.Controllers
         {
             Response.Cookies.Delete("token");
             return Ok(new { success = true, message = "Logout Successfully!" });
+        }
+
+
+        [Route("UpdateUser/{id}")]
+        [HttpPatch]
+        public IActionResult UpdateTwoFatorAuth(User u,int id)
+        {
+            _auth.UpdateTwoFactorAuth(u,id);
+            return Ok(new { success = true, message = "Update Succesfully" });
         }
 
     }

@@ -8,13 +8,6 @@ function validateInput(input) {
                 let nextInput = input.nextElementSibling;
                 if (nextInput) nextInput.focus(); // Move to the next box
             }
-
-            // // If all fields are filled, auto-clear
-            // let otpInputs = document.querySelectorAll(".otp-input");
-            // let filled = Array.from(otpInputs).every(input => input.value.length > 0);
-            // if (filled) {
-            //     setTimeout(clearOTP, 1000); // Auto-clear after 1 second
-            // }
         }
 
          function handleBackspace(event, input) {
@@ -31,4 +24,5 @@ function validateInput(input) {
         function clearOTP() {
             document.querySelectorAll(".otp-input").forEach(input => input.value = '');
             document.querySelector(".otp-input").focus(); // Focus on first box after clearing
-        }
+}
+

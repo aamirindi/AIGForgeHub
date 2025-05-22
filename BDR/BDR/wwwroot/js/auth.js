@@ -4,10 +4,10 @@ $(document).ready(function () {
 
 
 
-$('#loginBtn').click(function () {
-    var obj = $("#loginForm").serialize();
+$('#loginForm').submit(function (e) {
+    e.preventDefault();
 
-    // console.log(obj.toString());
+    var obj = $("#loginForm").serialize();
 
     $.ajax({
         url: "/Auth/Login",
@@ -15,16 +15,12 @@ $('#loginBtn').click(function () {
         dataType: 'json',
         data: obj,
         success: function (res) {
-
             console.log(res);
             if (res.success == true) {
-
                 toastr.success(res.message);
-
                 window.location.href = res.redirectUrl;
             }
-            if (res.success == false) {
-
+            else {
                 toastr.error(res.message);
             }
             $('#loginForm')[0].reset();

@@ -75,5 +75,13 @@ namespace BDRApi.Services
             var userData = _db.Users.ToList();
             return userData;
         }
+
+        public  void UpdateTwoFactorAuth(User u,int id)
+        {
+
+            var userData = _db.Users.Find(id);
+            userData.TwoFactorAuth = "Yes";
+            _db.SaveChangesAsync();
+        }
     }
 }

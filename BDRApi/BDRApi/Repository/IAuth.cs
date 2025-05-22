@@ -12,5 +12,7 @@ namespace BDRApi.Repository
         Task<AuthResponse> Authentication(string email, string password);
         List<User> GetUsers();
         Task<AuthResponse> GetUserData(string email, string pass);
+
+        void UpdateTwoFactorAuth(User u,int id);
     }
 }

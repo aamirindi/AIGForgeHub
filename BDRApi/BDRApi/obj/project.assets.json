@@ -4929,24 +4929,31 @@
     ]
   },
   "packageFolders": {
-    "/home/mohd-aamir-indi/.nuget/packages/": {}
+    "C:\\Users\\yadav\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mohd-aamir-indi/Downloads/BDR/BDRApi/BDRApi/BDRApi.csproj",
+      "projectUniqueName": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDRApi\\BDRApi\\BDRApi.csproj",
       "projectName": "BDRApi",
-      "projectPath": "/home/mohd-aamir-indi/Downloads/BDR/BDRApi/BDRApi/BDRApi.csproj",
-      "packagesPath": "/home/mohd-aamir-indi/.nuget/packages/",
-      "outputPath": "/home/mohd-aamir-indi/Downloads/BDR/BDRApi/BDRApi/obj/",
+      "projectPath": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDRApi\\BDRApi\\BDRApi.csproj",
+      "packagesPath": "C:\\Users\\yadav\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDRApi\\BDRApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/mohd-aamir-indi/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\yadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4963,9 +4970,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -5025,7 +5032,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.100-rc.2.24474.11/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

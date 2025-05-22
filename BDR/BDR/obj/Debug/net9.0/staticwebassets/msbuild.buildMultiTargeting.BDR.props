@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/BDR.props" />
+  <Import Project="..\build\BDR.props" />
 </Project>

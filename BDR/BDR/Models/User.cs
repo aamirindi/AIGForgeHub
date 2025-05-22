@@ -5,6 +5,18 @@ using System.Threading.Tasks;
 
 namespace BDR.Models
 {
+    public class LoginResponse
+    {
+        public string message { get; set; }
+        public LoginResult result { get; set; }
+    }
+
+    public class LoginResult
+    {
+        public string message { get; set; }
+        public User data { get; set; }
+    }
+
     public class User
     {
         public int userId { get; set; }
@@ -14,5 +26,8 @@ namespace BDR.Models
         public string userRole { get; set; }
         public string userPhone { get; set; }
         public string twoFactorAuth { get; set; }
+
+       
     }
+
 }

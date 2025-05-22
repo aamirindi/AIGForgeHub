@@ -6,6 +6,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using BDR.Models;
+using Google.Authenticator;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -16,8 +17,12 @@ namespace BDR.Controllers
     {
         private readonly ILogger<AuthController> _logger;
         HttpClient _httpClient;
+        private readonly IConfiguration _configuration;
+        private readonly string _key;
 
-        public AuthController(ILogger<AuthController> logger, HttpClient httpClient)
+
+
+        public AuthController(ILogger<AuthController> logger, HttpClient httpClient, IConfiguration configuration)
         {
             this._logger = logger;
 
@@ -25,6 +30,8 @@ namespace BDR.Controllers
             handler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
 
             _httpClient = new HttpClient(handler);
+            _configuration = configuration;
+            _key = configuration["TwoAuth:Key"] ?? throw new ArgumentException("Key is not configured in app settings");
         }
 
 
@@ -56,8 +63,16 @@ namespace BDR.Controllers
 
             if (response.IsSuccessStatusCode)
             {
+                //var result = await response.Content.ReadAsStringAsync();
+                //var user = JsonConvert.DeserializeObject<User>(result);
+
                 var result = await response.Content.ReadAsStringAsync();
-                var user = JsonConvert.DeserializeObject<User>(result);
+                var loginResponse = JsonConvert.DeserializeObject<LoginResponse>(result);
+
+                var user = loginResponse?.result?.data;
+
+
+                //Console.WriteLine(user.userName);
 
                 if (user != null)
                 {
@@ -66,39 +81,108 @@ namespace BDR.Controllers
                     HttpContext.Session.SetString("UserName", user.userName);
                     HttpContext.Session.SetString("UserEmail", user.userEmail);
                     HttpContext.Session.SetString("UserRole", user.userRole);
+                    HttpContext.Session.SetString("Password", user.userPass);
 
-                    // redirect based on role
-                    string redirectUrl = user.userRole switch
+
+                    if(user.twoFactorAuth.Equals("No"))
                     {
-                        "SuperAdmin" => Url.Action("SuperAdminDashboard", "Home"),
-                        "Admin" => Url.Action("AdminDashboard", "Home"),
-                        "Vendor" => Url.Action("VendorDashboard", "Home"),
-                        "Buyer" => Url.Action("BuyerDashboard", "Home"),
-                        _ => null
-                    };
+                      return RedirectToAction("Qr");
 
-                    if (redirectUrl != null)
-                        TempData["success"] = $"{user.userName} logged in successfully";
-                    return Json(new { success = true, redirectUrl });
+                    }
+                    else
+
+                    {
+                         return RedirectToAction("Otp");
+                    }
+
+                    
+
                 }
             }
 
-            return Json(new { success = false, message = "Error during login" });
-
+            return View();
         }
 
 
         // otp view
         public IActionResult Otp()
         {
+            if(HttpContext.Session.GetString("UserEmail")==null)
+            {
+                return RedirectToAction("login");
+            }
+
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Otp(IFormCollection fc)
+        {
+            var token = fc["otp"];
+            Console.WriteLine(token);
+            TwoFactorAuthenticator tfa = new TwoFactorAuthenticator();
+            string useruniqueKey = Convert.ToString(HttpContext.Session.GetString("UserEmail")) + _key;
+            //Console.WriteLine(useruniqueKey);
+            bool isValid = tfa.ValidateTwoFactorPIN(useruniqueKey, token);
+
+            int userId = int.Parse(HttpContext.Session.GetString("UserId"));
+
+            string userRole = HttpContext.Session.GetString("UserRole");
+            string userName = HttpContext.Session.GetString("UserName");
+            if (isValid)
+            {
+
+
+                HttpContext.Session.SetString("id", Convert.ToString(HttpContext.Session.GetString("UserEmail")) + _key);
+
+                //string url = "http://localhost:5056/api/Auth/UpdateUser/{userId}";
+                //var user = new User
+                //{
+                //    twoFactorAuth = "Yes"
+                //};
+
+                //var json = JsonConvert.SerializeObject(user);
+                //StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+                //HttpResponseMessage res = _httpClient.PatchAsync(url, content).Result;
+
+
+
+                //redirect based on roleS
+                string redirectUrl = userRole switch
+                {
+                    "SuperAdmin" => "SuperAdminDashboard",
+                    "Admin" => "AdminDashboard",
+                    "Vendor" => "VendorDashboard",
+                    "Buyer" => "BuyerDashboard",
+                    _ => "Login"
+                };
+
+                TempData["success"] = $"{userName} logged in successfully";
+                return RedirectToAction(redirectUrl, "Home");
+            }
+            TempData["error"] = "Invalid OTP";
+            return RedirectToAction("login");
+        }
+
         // Qr view
+
         public IActionResult Qr()
         {
-            return View();
+            if (HttpContext.Session.GetString("UserEmail") != null)
+            {
+                TwoFactorAuthenticator tfa = new TwoFactorAuthenticator();
+                string useruniqueKey = Convert.ToString(HttpContext.Session.GetString("UserEmail")) + _key;
+                var setupCode = tfa.GenerateSetupCode("Google Authenticator", HttpContext.Session.GetString("UserEmail"), useruniqueKey, false);
+                ViewBag.QrCodeImageUrl = setupCode.QrCodeSetupImageUrl;
+                ViewBag.SetupCode = setupCode.ManualEntryKey;
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("login");
+            }
         }
+
 
     }
 }
