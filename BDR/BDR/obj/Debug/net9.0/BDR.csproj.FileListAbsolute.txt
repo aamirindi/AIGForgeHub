@@ -313,3 +313,4 @@ C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\refint\
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\BDR.pdb
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\BDR.genruntimeconfig.cache
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\ref\BDR.dll
+C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

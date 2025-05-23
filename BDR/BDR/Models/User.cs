@@ -27,7 +27,15 @@ namespace BDR.Models
         public string userPhone { get; set; }
         public string twoFactorAuth { get; set; }
 
-       
+
     }
+
+    public class OtpTokenResponse
+    {
+        public bool success { get; set; }
+        public string message { get; set; }
+        public string token { get; set; }
+    }
+
 
 }

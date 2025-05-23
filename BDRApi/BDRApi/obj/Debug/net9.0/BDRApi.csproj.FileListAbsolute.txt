@@ -510,3 +510,4 @@ C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDRApi\BDRApi\obj\Debug\net9.0\r
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDRApi\BDRApi\obj\Debug\net9.0\BDRApi.pdb
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDRApi\BDRApi\obj\Debug\net9.0\BDRApi.genruntimeconfig.cache
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDRApi\BDRApi\obj\Debug\net9.0\ref\BDRApi.dll
+C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDRApi\BDRApi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

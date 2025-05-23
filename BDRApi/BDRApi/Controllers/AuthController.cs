@@ -104,12 +104,12 @@ namespace BDRApi.Controllers
         [HttpPatch]
         public async Task<IActionResult> UpdateTwoFactorAuth(int id)
         {
-            var result =await _auth.UpdateTwoFactorAuthAsync(id);
+            var result = await _auth.UpdateTwoFactorAuthAsync(id);
             if (result.Message == "User not found!")
                 return NotFound(new { message = result.Message });
-            
-              return Ok(new { success = true, message = result.Message });
-            
+
+            return Ok(new { success = true, message = result.Message });
+
         }
 
         [Route("SendMail/{email}")]
@@ -119,8 +119,8 @@ namespace BDRApi.Controllers
             var result = await _auth.ForgotQr(email);
             if (result.Message != "Otp sent successfully")
                 return NotFound(new { message = "Mail Not Send" });
-            
-                return Ok(new { success = true, message = result.Message });
+
+            return Ok(new { success = true, message = result.Message, token = result.Data });
         }
 
     }

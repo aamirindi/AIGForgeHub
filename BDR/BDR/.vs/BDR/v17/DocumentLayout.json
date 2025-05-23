@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|c:\\users\\yadav\\onedrive\\desktop\\aig\\aigforgehub\\bdr\\bdr\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|c:\\users\\yadav\\onedrive\\desktop\\aig\\aigforgehub\\bdr\\bdr\\views\\auth\\otp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|solutionrelative:views\\auth\\otp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|c:\\users\\yadav\\onedrive\\desktop\\aig\\aigforgehub\\bdr\\bdr\\views\\home\\superadmindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|solutionrelative:views\\home\\superadmindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|c:\\users\\yadav\\onedrive\\desktop\\aig\\aigforgehub\\bdr\\bdr\\views\\home\\vendordashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|solutionrelative:views\\home\\vendordashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|c:\\users\\yadav\\onedrive\\desktop\\aig\\aigforgehub\\bdr\\bdr\\views\\home\\buyerdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|solutionrelative:views\\home\\buyerdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|c:\\users\\yadav\\onedrive\\desktop\\aig\\aigforgehub\\bdr\\bdr\\views\\home\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|solutionrelative:views\\home\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|c:\\users\\yadav\\onedrive\\desktop\\aig\\aigforgehub\\bdr\\bdr\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|c:\\users\\yadav\\onedrive\\desktop\\aig\\aigforgehub\\bdr\\bdr\\filters\\globalexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|solutionrelative:filters\\globalexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|c:\\users\\yadav\\onedrive\\desktop\\aig\\aigforgehub\\bdr\\bdr\\bdr.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B07FB10D-A181-E2C5-4491-0B10F08BD18B}|BDR.csproj|solutionrelative:bdr.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Views\\Home\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\AdminDashboard.cshtml",
+              "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Views\\Home\\AdminDashboard.cshtml",
+              "RelativeToolTip": "Views\\Home\\AdminDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-23T06:50:09.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAqwN0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T05:13:57.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BuyerDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Views\\Home\\BuyerDashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\BuyerDashboard.cshtml",
+              "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Views\\Home\\BuyerDashboard.cshtml",
+              "RelativeToolTip": "Views\\Home\\BuyerDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-23T06:50:22.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T06:21:35.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Otp.cshtml",
+              "DocumentMoniker": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Views\\Auth\\Otp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Auth\\Otp.cshtml",
+              "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Views\\Auth\\Otp.cshtml",
+              "RelativeToolTip": "Views\\Auth\\Otp.cshtml",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAHYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-23T05:15:01.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SuperAdminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Views\\Home\\SuperAdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\SuperAdminDashboard.cshtml",
+              "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Views\\Home\\SuperAdminDashboard.cshtml",
+              "RelativeToolTip": "Views\\Home\\SuperAdminDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-23T06:50:35.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VendorDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Views\\Home\\VendorDashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\VendorDashboard.cshtml",
+              "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Views\\Home\\VendorDashboard.cshtml",
+              "RelativeToolTip": "Views\\Home\\VendorDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-23T06:50:51.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GlobalExceptionFilter.cs",
+              "DocumentMoniker": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Filters\\GlobalExceptionFilter.cs",
+              "RelativeDocumentMoniker": "Filters\\GlobalExceptionFilter.cs",
+              "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\Filters\\GlobalExceptionFilter.cs",
+              "RelativeToolTip": "Filters\\GlobalExceptionFilter.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T06:15:58.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BDR.csproj",
+              "DocumentMoniker": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\BDR.csproj",
+              "RelativeDocumentMoniker": "BDR.csproj",
+              "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDR\\BDR\\BDR.csproj",
+              "RelativeToolTip": "BDR.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-23T05:13:38.228Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -68,9 +68,10 @@
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDRApi\\BDRApi\\Services\\AuthService.cs",
               "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAASwHcAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAWwH8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T15:08:27.779Z"
+              "WhenOpened": "2025-05-22T15:08:27.779Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,7 +81,7 @@
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\yadav\\OneDrive\\Desktop\\AIG\\AIGForgeHub\\BDRApi\\BDRApi\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAA9wH4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAgwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T14:52:15.745Z",
               "EditorCaption": ""

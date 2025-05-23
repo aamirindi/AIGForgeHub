@@ -17,11 +17,11 @@ namespace BDRApi.Services
     {
         private readonly ApplicationDbContext _db;
         private readonly IJwt _jwt;
-         private readonly IConfiguration _config;
+        private readonly IConfiguration _config;
         private readonly string _emailSender;
         private readonly string _appPassword;
 
-        public AuthService(ApplicationDbContext _db, IJwt _jwt,IConfiguration config)
+        public AuthService(ApplicationDbContext _db, IJwt _jwt, IConfiguration config)
         {
             this._db = _db;
             this._jwt = _jwt;
@@ -88,9 +88,19 @@ namespace BDRApi.Services
             var userData = await _db.Users.FindAsync(id);
             if (userData != null)
             {
-                userData.TwoFactorAuth = "Yes";
-                await _db.SaveChangesAsync();
-                return new AuthResponse("Update Succesfully");
+                if (userData.TwoFactorAuth.Equals("Yes"))
+                {
+                    userData.TwoFactorAuth = "No";
+                    await _db.SaveChangesAsync();
+                    return new AuthResponse("Update Succesfully");
+                }
+                else
+                {
+                    userData.TwoFactorAuth = "Yes";
+                    await _db.SaveChangesAsync();
+                    return new AuthResponse("Update Succesfully");
+
+                }
             }
             return new AuthResponse("User not found!");
         }
@@ -100,7 +110,7 @@ namespace BDRApi.Services
         {
             string subject = "Forgot Otp Coming";
             Random random = new Random();
-            string  token=random.Next(100000, 999999).ToString();
+            string token = random.Next(100000, 999999).ToString();
             string body = $"Your Otp is{token}";
             var s = new SmtpClient("smtp.gmail.com")
             {
@@ -117,9 +127,7 @@ namespace BDRApi.Services
             };
             MailMessage.To.Add(email);
             s.Send(MailMessage);
-            return new AuthResponse("Otp sent successfully");
-
-
+            return new AuthResponse("Otp sent successfully", token);
         }
 
     }
