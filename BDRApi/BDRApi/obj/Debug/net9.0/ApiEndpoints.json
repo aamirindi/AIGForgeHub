@@ -63,17 +63,28 @@
   },
   {
     "ContainingType": "BDRApi.Controllers.AuthController",
-    "Method": "UpdateTwoFatorAuth",
+    "Method": "ForgotQr",
+    "RelativePath": "api/Auth/SendMail/{email}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BDRApi.Controllers.AuthController",
+    "Method": "UpdateTwoFactorAuth",
     "RelativePath": "api/Auth/UpdateUser/{id}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "u",
-        "Type": "BDRApi.Models.User",
-        "IsRequired": true
-      },
       {
         "Name": "id",
         "Type": "System.Int32",

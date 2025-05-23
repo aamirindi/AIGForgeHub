@@ -307,7 +307,6 @@ C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\staticw
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.BDR.props
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.BDR.props
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\BDR.csproj.Up2Date
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\BDR.dll
 C:\Users\yadav\OneDrive\Desktop\AIG\AIGForgeHub\BDR\BDR\obj\Debug\net9.0\refint\BDR.dll

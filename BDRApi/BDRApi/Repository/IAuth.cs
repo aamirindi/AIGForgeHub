@@ -13,6 +13,8 @@ namespace BDRApi.Repository
         List<User> GetUsers();
         Task<AuthResponse> GetUserData(string email, string pass);
 
-        void UpdateTwoFactorAuth(User u,int id);
+        Task<AuthResponse> UpdateTwoFactorAuthAsync(int id);
+
+        Task<AuthResponse> ForgotQr(string email);
     }
 }

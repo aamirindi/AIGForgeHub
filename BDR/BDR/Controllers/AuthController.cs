@@ -84,18 +84,18 @@ namespace BDR.Controllers
                     HttpContext.Session.SetString("Password", user.userPass);
 
 
-                    if(user.twoFactorAuth.Equals("No"))
+                    if (user.twoFactorAuth.Equals("No"))
                     {
-                      return RedirectToAction("Qr");
+                        return RedirectToAction("Qr");
 
                     }
                     else
 
                     {
-                         return RedirectToAction("Otp");
+                        return RedirectToAction("Otp");
                     }
 
-                    
+
 
                 }
             }
@@ -107,7 +107,7 @@ namespace BDR.Controllers
         // otp view
         public IActionResult Otp()
         {
-            if(HttpContext.Session.GetString("UserEmail")==null)
+            if (HttpContext.Session.GetString("UserEmail") == null)
             {
                 return RedirectToAction("login");
             }
@@ -118,12 +118,12 @@ namespace BDR.Controllers
         [HttpPost]
         public IActionResult Otp(IFormCollection fc)
         {
-            var token = fc["otp"];
-            Console.WriteLine(token);
+            // Console.WriteLine(token);
             TwoFactorAuthenticator tfa = new TwoFactorAuthenticator();
             string useruniqueKey = Convert.ToString(HttpContext.Session.GetString("UserEmail")) + _key;
             //Console.WriteLine(useruniqueKey);
-            bool isValid = tfa.ValidateTwoFactorPIN(useruniqueKey, token);
+            bool isValid = tfa.ValidateTwoFactorPIN(useruniqueKey, fc["otp"]);
+
 
             int userId = int.Parse(HttpContext.Session.GetString("UserId"));
 
@@ -135,15 +135,10 @@ namespace BDR.Controllers
 
                 HttpContext.Session.SetString("id", Convert.ToString(HttpContext.Session.GetString("UserEmail")) + _key);
 
-                //string url = "http://localhost:5056/api/Auth/UpdateUser/{userId}";
-                //var user = new User
-                //{
-                //    twoFactorAuth = "Yes"
-                //};
+                string url = $"http://localhost:5056/api/Auth/UpdateUser/{userId}";
+                HttpResponseMessage res = _httpClient.PatchAsync(url, null).Result;
 
-                //var json = JsonConvert.SerializeObject(user);
-                //StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
-                //HttpResponseMessage res = _httpClient.PatchAsync(url, content).Result;
+
 
 
 
@@ -161,7 +156,7 @@ namespace BDR.Controllers
                 return RedirectToAction(redirectUrl, "Home");
             }
             TempData["error"] = "Invalid OTP";
-            return RedirectToAction("login");
+            return View();
         }
 
         // Qr view
